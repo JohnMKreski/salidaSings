@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+      
+    <link href="./src/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+    <link href="./src/css/web.css" rel="stylesheet" type="text/css" />
+    <link href="./src/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./src/css/slideshow.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/ba57204060.js" crossorigin="anonymous"></script>
+    <script src="./src/jquery/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="./src/jquery/jquery.cycle.all.js" type="text/javascript"></script>
+
+    <link rel="icon" type="image/x-icon" href="./src/media/images/icons/note.ico">
+
+    <title>Salida Sings - Gallery</title>
+ 
+  </head>
+
+  <body class="oneColFixCtr">
+    <header>
+      <div id="MainContent" class="menuCtn">
+        <div id="header" class="headerCtn">
+          <a href="index.html" class="flexHome">
+            <img src="./src/media/images/banner/Salida-Sings.png" class="homeIMG" />
+          </a>
+        </div>
+
+        <div class="flexMenu">
+          <a href="./index.html" class=" flexLink">
+            <h2 class="flexTitle"> Gallery </h2>
+          </a>
+          
+          <a href="./news.html" class=" flexLink news">
+            <h2 class="flexTitle"> News </h2>
+          </a>
+
+          <a href="./noteables.html" class="flexLink notables">
+            <h2 class="flexTitle"> The Noteables </h2>
+          </a>
+
+          
+          <a href="support.html" class="flexLink support">
+            <h2 class="flexTitle"> Support Us </h2>
+          </a>
+         
+          
+          <!-- <a href="./contact.html" class="flexLink support">
+            <h2 class="flexTitle"> Contact Us </h2>
+          </a> -->
+        </div>
+      </div>
+    </header>
+
+    <main id="container" class="mainCtn">
+      <div class="page">
+        <div id="ContentAndMenu">
+          <hr style="background-color: #555;"/>
+
+          <div id="slideshowContainer" class="slideshowCtn"> <!-- SLIDESHOW-->
+            <div class="slider">
+              <div class="arrow">
+                <i class="fa-light fa-arrow-left" title="Previous Image"></i>
+              </div>
+
+              <div class="images">
+                <img
+                  id="img-1"
+                  src="./src/media/images/slideshow/newpics/01.jpeg"
+                  alt="Image 1"            
+                />
+                <img
+                  id="img-2"
+                  src="./src/media/images/slideshow/newpics/02.jpg"
+                  alt="Image 2"          
+                />
+                <img
+                  id="img-3"
+                  src="./src/media/images/slideshow/newpics/03.jpg"
+                  alt="Image 3"
+                />
+                <img
+                  id="img-4"
+                  src="./src/media/images/slideshow/newpics/04.jpg"
+                  alt="Image 4"
+                />
+                <img
+                  id="img-5"
+                  src="./src/media/images/slideshow/newpics/05.jpeg"
+                  alt="Image 5"
+                />
+                <img
+                  id="img-6"
+                  src="./src/media/images/slideshow/newpics/06.jpg"
+                  alt="Image 6"
+                />
+                <img
+                  id="img-7"
+                  src="./src/media/images/slideshow/newpics/07.jpg"
+                  alt="Image 7"
+                />
+                <img
+                  id="img-8"
+                  src="./src/media/images/slideshow/newpics/08.jpeg"
+                  alt="Image 8"
+                />
+                <img
+                  id="img-9"
+                  src="./src/media/images/slideshow/newpics/09.jpg"
+                  alt="Image 9"
+                />
+                <img
+                  id="img-10"
+                  src="./src/media/images/slideshow/newpics/10.jpg"
+                  alt="Image 10"
+                />
+                <img
+                  id="img-11"
+                  src="./src/media/images/slideshow/newpics/11.jpg"
+                  alt="Image 11"
+                />
+                <img
+                  id="img-12"
+                  src="./src/media/images/slideshow/newpics/12.jpeg"
+                  alt="Image 12"
+                />
+                <img
+                  id="img-13"
+                  src="./src/media/images/slideshow/newpics/13.jpg"
+                  alt="Image 13"
+                />
+                <img
+                  id="img-14"
+                  src="./src/media/images/slideshow/newpics/14.jpg"
+                  alt="Image 14"
+                />
+                <img
+                  id="img-15"
+                  src="./src/media/images/slideshow/newpics/15.jpeg"
+                  alt="Image 15"
+                /> 
+                <img
+                  id="img-16"
+                  src="./src/media/images/slideshow/newpics/16.jpg"
+                  alt="Image 16"
+                />
+                <img
+                  id="img-17"
+                  src="./src/media/images/slideshow/newpics/17.jpg"
+                  alt="Image 17"
+                />
+              </div>
+
+              <div class="arrow">
+                <i class="fa-light fa-arrow-right" title="Next Image"></i>
+              </div>  
+            </div> <!--Slider-->
+            <div class="slideBtns">
+              <button id="play" class="playBtn custom-tooltip" title="Play the Slideshow!">Play</button>
+              <button id="stop" class="stopBtn custom-tooltip" title="Stop the Slideshow!">Stop</button>
+            </div>
+
+            <!--  Notes & Sheet Music  -->
+            
+            <!-- <div class="sheetMusicContainer">
+              <div class="navigationCtn">
+                <div class="navigation-background">
+                  <img src="./src/media/images/icons/sheetmusic.png" alt="Sheet Music"/>
+                </div>
+
+                <div class="navigation-button">
+                  <span class=" note0 dot active" onclick="changeSlide(0)"></span>
+                  <span class="note1 dot" onclick="changeSlide(1)"></span>
+                  <span class="note2 dot" onclick="changeSlide(2)"></span>
+                  <span class="note3 dot" onclick="changeSlide(3)"></span>
+                  <span class="note4 dot" onclick="changeSlide(4)"></span>
+                  <span class="note5 dot" onclick="changeSlide(5)"></span>
+                  <span class="note6 dot" onclick="changeSlide(6)"></span>
+                  <span class="note7 dot" onclick="changeSlide(7)"></span>
+                  <span class="note8 dot" onclick="changeSlide(8)"></span>
+                  <span class="note9 dot" onclick="changeSlide(9)"></span>
+                  <span class="note10 dot" onclick="changeSlide(10)"></span>
+                  <span class="note11 dot" onclick="changeSlide(11)"></span>
+                  <span class="note12 dot" onclick="changeSlide(12)"></span>
+                  <span class="note13 dot" onclick="changeSlide(13)"></span>
+                  <span class="note14 dot" onclick="changeSlide(14)"></span>
+                  <span class="note15 dot" onclick="changeSlide(15)"></span>
+                  <span class="note16 dot" onclick="changeSlide(16)"></span>
+                </div>
+              </div>
+            </div>         -->
+          </div><!--Slideshow Ctn-->
+        </div><!--Content Menu-->
+
+        <div id="ContentAndMenu">
+          <hr style="background-color: #555;"/>
+
+          <div id="slideshowContainer" class="videoCtn"> <!-- SLIDESHOW-->
+            <!-- <div class="video">
+              <video width="900" controls>
+                <source src="./src/media/video/noteables.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video> 
+            </div>   
+            <p>
+              Video courtesy of 
+              <a href="" target="_blank">Ben Little</a> & <a href="" target="_blank">Josh Salazar</a>
+            </p>  -->
+            <iframe src="https://www.youtube.com/embed/FsJOWe-mfCk?si=fhTLEruAqzDx_3Zo&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div><!--Video Ctn-->
+        </div><!--Content Menu-->
+      </div><!--Page-->
+    </main>
+
+    <footer>
+      <div class="footerCtn">
+        <div class = "footerIcons">
+            <a href="mailto:%20singinglady29@gmail.com" class="custom-tooltip" title="Email Me!">
+              <i class="footIcon fa-solid fa-envelope" style="color: grey;"></i>
+            </a>
+            <a href="http://www.facebook.com/SalidaSings" class="custom-tooltip" title="Facebook" target="_blank" rel="noopener noreferrer">
+              <i class="footIcon fa-brands fa-facebook" style="color: blue;"></i>
+            </a>
+            <a href="http://www.youtube.com/user/SalidaSings" class="custom-tooltip" title="Youtube" target="_blank" rel="noopener noreferrer">
+              <i class="footIcon fa-brands fa-youtube" style="color: red;"></i>
+            </a> 
+        </div>
+        <h4 class="centerContents largeText">
+            &copy; 2012-2024 SalidaSings.org  
+          <br>
+            Website By
+          <a class = "peakLink" href="https://peakservices.biz" target="_blank" rel="noopener noreferrer"> Peak Services</a>
+          <br>
+            For more information, please contact 
+          <a href="mailto:%20singinglady29@gmail.com" target="_blank" rel="noopener noreferrer">Linda Taylor</a>
+          - (719) 539-2428<br/>        
+        </h4>
+      </div>
+    </footer>
+
+      <script src="./src/js/slideshow2.js" type="text/javascript"></script>
+      <!--<script src="css/js/slideshow.js" type="text/javascript"></script>-->
+      
+  </body>
+</html>

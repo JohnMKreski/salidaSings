@@ -1,0 +1,6 @@
+.vscode
+._.DS_Store
+server
+package-lock.json
+node_modules
+**public/src/media/video

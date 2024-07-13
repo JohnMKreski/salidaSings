@@ -1,0 +1,497 @@
+/*img
+{
+  border: 0;
+}*/
+h1 {
+  text-align: center;
+}
+h4 {
+  font-weight: lighter;
+}
+.ajax__calendar_days table tr td
+{
+  padding: 0;
+  margin: 0;
+}  
+.validator
+{
+  font-weight: bold;
+  color: #FF0000;
+}
+.centerMe
+{ 
+  margin: 0 auto;
+}
+.centerContents
+{
+  text-align: center;
+}
+.centerContents table, .centerContents div
+{
+  margin: 0 auto;
+}
+.centerContents td, .centerContents th
+{
+  text-align: center;
+}
+.leftContents
+{
+  text-align: left;
+}
+.leftContents table, .leftContents div
+{
+  margin: 0;
+}
+.leftContents td, .leftContents th
+{
+  text-align: left;
+}
+.rightContents
+{
+  text-align: right;
+}
+.rightContents table, .rightContents div
+{
+  margin-left: auto;
+  margin-right: 0;
+}
+.rightContents td, .rightContents th
+{
+  text-align: right;
+}
+
+.modalBackground
+{
+  background-color: #000;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+.modalPopup
+{
+  width: 450px;
+  padding: 5px;
+  border: 1px double black;
+  background-color: #FFF;
+}
+
+/*IMG.hyperlink
+{
+  padding-right: 3px;
+  vertical-align: middle;
+}*/
+
+.border
+{
+  border: 1px solid gray;
+}
+
+table.invisible
+{
+  border-width: 0;
+  border-collapse: collapse;
+}
+table.invisible th, table.invisible td
+{
+  padding: 0px;
+}
+
+.cleanup
+{
+  border-collapse: separate;
+}
+
+table.grid
+{
+  border-width: 1px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-color: gray;
+  border-collapse: collapse;
+}
+table.grid th
+{
+  border-width: 1px;
+  padding: 4px;
+  font-weight: bold;
+  border-style: solid;
+  border-color: gray;
+  background-color: #F4F4F4;
+  border-radius: 0px;
+}
+table.grid td
+{
+  border-width: 1px;
+  padding: 4px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 0px;
+}
+
+tr.pager td table tr td
+{
+  border-width:0px;
+}
+
+table.center th
+{
+  text-align: center;
+}
+table.center td
+{
+  text-align: center;
+}
+
+table.wide
+{
+  width: 100%;
+}
+table.vtop th, table.vtop td
+{
+  vertical-align: top;
+}
+td.vtop, th.vtop
+{
+  vertical-align: top;
+}
+table.vmiddle th, table.vmiddle td
+{
+  vertical-align: middle;
+}
+td.vmiddle, th.vmiddle
+{
+  vertical-align: middle;
+}
+
+table.padded td, table.padded th
+{
+  padding: 2px;
+}
+table.extraPadded td, table.extraPadded th
+{
+  padding: 7px;
+}
+div.box
+{
+  border: 1px solid gray;
+  padding: 8px;
+  background-color: #F4F4F4;
+}
+
+.underline
+{
+  border-bottom: 1px solid gray;
+}
+div.padded
+{
+  padding: 3px;
+}
+p
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-indent: 50px;
+}
+
+hr
+{
+  height: 1px;
+  background-color: #ccc;
+  color: #ccc;
+  border: 0px;
+  margin: 10px 0;
+}
+
+ul, ol
+{
+  margin: 8px 0px 0px 5px;
+  padding: 0px;
+}
+li
+{
+  margin: 5px 5px 5px 20px;
+  padding: 0;
+}
+
+ul.wide, ol.wide
+{
+  margin: 8px 0px 0px 5px;
+  padding: 0px;
+}
+ul.wide li, ol.wide li
+{
+  margin: 5px 5px 20px 20px;
+  padding: 0;
+}
+
+ul.adobe
+{
+  margin: 5px 0px 0px 10px;
+  padding: 0px;
+}
+ul.adobe li
+{
+  margin: 0px 5px 0px 25px;
+  padding: 0px;
+  list-style-image: url(../images/ico_Adobe_li.gif);
+}
+
+blockquote
+{
+  margin: 5px 0px 15px 15px;
+}
+
+dt
+{
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 3px;
+}
+
+dd
+{
+  margin: 0px 0px 3px 15px;
+}
+
+.paddedBorder
+{
+  padding: 4px;
+  border: 1px solid gray;
+  background-color: #FFFFFF;
+}
+
+.paddedBorderWide
+{
+  padding: 6px;
+  border: 1px solid gray;
+  background-color: #FFFFFF;
+}
+
+.blackBorder
+{
+  border: solid black;
+  border-width: 1px;
+}
+
+
+.light
+{
+  color: #FFF;
+}
+
+.subtle
+{
+  color: #777;
+}
+
+.tinyText
+{
+  font-size: 9px;
+}
+
+.smallText
+{
+  font-size: small;
+}
+
+.mediumText {
+  font-size: medium;
+}
+
+.largeText {
+  font-size: large;
+}
+
+
+.subText
+{
+  font-size: 11px;
+}
+
+.bigText
+{
+  font-size: 13px;
+}
+
+.largerText
+{
+  font-size: 16px;
+}
+
+.normalText
+{
+  font-size: 9pt;
+  font-weight: normal;
+  color: #444444;
+}
+.error
+{
+  background-color: lightyellow;
+  font-weight: bold;
+  color: red;
+  padding: 3px;
+}
+
+.highlight
+{
+  background: #ffff00;
+}
+
+.floatLeft
+{
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.floatRight
+{
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.clearBoth
+{
+  clear: both;
+}
+INPUT.btn, BUTTON.btn
+{
+  color: #6086B4;
+  font-weight: bold;
+  font-family: Tahoma,Verdana,Sans-Serif;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.top
+{
+  border: solid black;
+  border-width: 1px 0px 0px 0px;
+}
+.right
+{
+  border: solid black;
+  border-width: 0px 1px 0px 0px;
+}
+.bottom
+{
+  border: solid black;
+  border-width: 0px 0px 1px 0px;
+}
+.left
+{
+  border: solid black;
+  border-width: 0px 0px 0px 1px;
+}
+.leftTop
+{
+  border: solid black;
+  border-width: 1px 0px 0px 1px;
+}
+.rightTop
+{
+  border: solid black;
+  border-width: 1px 0px 0px 1px;
+}
+.N
+{
+  border: solid black;
+  border-width: 1px 1px 0px 1px;
+}
+.U
+{
+  border: solid black;
+  border-width: 0px 1px 1px 1px;
+}
+.C
+{
+  border: solid black;
+  border-width: 1px 0px 1px 1px;
+}
+.inC
+{
+  border: solid black;
+  border-width: 1px 1px 1px 0px;
+}
+.topBot
+{
+  border: solid black;
+  border-width: 1px 0px 1px 0px;
+}
+.full
+{
+  border: solid black;
+  border-width: 1px 1px 1px 1px;
+}
+
+.hidden
+{
+  display: none;
+}
+
+@media print
+{
+  .hideOnPrint
+  {
+    display: none;
+  }
+}
+
+P.pageBreak
+{
+  page-break-before: always;
+}
+
+/* .text-overlay {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 24px; 
+  width: 100%;
+  text-align: center;
+} */
+
+.custom-tooltip {
+  position: relative;
+}
+
+.custom-tooltip:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 50%;
+  left: 100%;
+  /* transform: translateX(10%); */
+  padding: 5px 10px; 
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 24px;
+  white-space: nowrap; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  text-indent: 0%;
+}
+
+.custom-tooltip:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 100%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  z-index: 1;
+}
+
+.custom-tooltip:hover::after,
+.custom-tooltip:hover::before {
+  opacity: 1;
+}
+
+
+
