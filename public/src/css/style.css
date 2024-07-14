@@ -549,6 +549,15 @@ footer {
   padding: 25px;
 }
 
+.div-line {
+  width: 100%;
+  border-bottom: 1px solid black;
+  }
+
+h5 {
+  font-size: larger;
+}
+
 /* .paraContainer p {
   text-indent: 50px;
 } */
