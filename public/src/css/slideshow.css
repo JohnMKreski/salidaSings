@@ -43,17 +43,14 @@
 }
 
 .arrow {
-  display: block;
-  font-size: xxx-large;
-  cursor: pointer;
-  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
 }
 
 .arrow:hover {
-  display: block;
-  font-size: xxx-large;
   cursor: pointer;
-  color: rgba(2, 8, 126, 0.361);
 }
 
 .images {
@@ -78,7 +75,7 @@
   flex-direction: row;
   }
 
-.slider img {
+.images > img {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -90,11 +87,11 @@
   transition: opacity 0.5s ease;
 }
 
-.slider img:first-child {
+.images > img:first-child {
   z-index: 1;
 }
 
-.slider img:nth-child(2) {
+.images > img:nth-child(2) {
   z-index: 0;
 }
 
@@ -291,6 +288,44 @@ iframe {
 
 #play title {
   position: relative;
+}
+
+/* Slideshow arrow buttons */
+.arrowBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+}
+.arrowBtn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.arrowBtn:active {
+  transform: scale(0.96);
+}
+.arrowBtn img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.arrowBtn svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.arrowBtn i {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Mirror the right-arrow PNG for the left control */
+#arrowL svg {
+  transform: scaleX(-1);
 }
 
 

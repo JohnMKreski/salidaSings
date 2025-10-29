@@ -10,7 +10,7 @@
     <link href="./src/css/style.css" rel="stylesheet" type="text/css" />
     <link href="./src/css/slideshow.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://kit.fontawesome.com/ba57204060.js" crossorigin="anonymous"></script>
+  <!-- Removed Font Awesome kit; footer icons are inline SVGs in shared footer -->
     <script src="./src/jquery/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script src="./src/jquery/jquery.cycle.all.js" type="text/javascript"></script>
 
@@ -25,12 +25,11 @@
       <div id="MainContent" class="menuCtn">
         <div id="header" class="headerCtn">
           <a href="index.html" class="flexHome">
-            <img src="./src/media/images/banner/Salida-Sings.png" />
+            <img src="./src/media/images/banner/Salida-Sings.png" alt="Salida Sings logo banner" />
           </a>
         </div>
 
-        <div class="FrontPageItemSelector flexMenu">
-
+        <div class="FrontPageItemSelector flexMenu" aria-label="Main Navigation">
           <a href="./index.html" class=" flexLink">
             <h2 class="flexTitle"> Gallery </h2>
           </a>
@@ -39,20 +38,13 @@
             <h2 class="flexTitle"> News </h2>
           </a>
 
-          <a href="./noteables.html" class="flexLink notables">
+          <a href="./noteables.html" class="flexLink notables" aria-current="page">
             <h2 class="flexTitle"> The Noteables </h2>
           </a>
 
-          
           <a href="support.html" class="flexLink support">
             <h2 class="flexTitle"> Support Us </h2>
           </a>
-         
-          
-          <!-- <a href="./contact.html" class="flexLink support">
-            <h2 class="flexTitle"> Contact Us </h2>
-          </a> -->
-
         </div>
       </div>
     </header>
@@ -64,8 +56,8 @@
 
           <div class="paraContainer">
             <h1>The Noteables</h1>
-            <img src="./src/media/images/theNoteables/2010-Winter-Noteables-04.jpg" class="floatRightWithBorder"/>
-            <p>The all women's community chorus was founded in 1988 by director, 
+            <img src="./src/media/images/theNoteables/2010-Winter-Noteables-04.jpg" class="floatRightWithBorder" aria-label="Salida Sings Picture"/>
+            <p class="indent">The all women's community chorus was founded in 1988 by director, 
               Georgiana Smith and accompanist/vocalist Jeanne Kostelic during a time when 
               Salida was struggling to recover from the loss of the mining and railroad 
               industries. Other than church choirs there had been relatively few performing 
@@ -75,7 +67,7 @@
               fluctuated throughout the past 30 years, the group has flourished.
             </p>
             <br>
-            <p>The Noteables have been under the direction of Linda Taylor since 2008. 
+            <p class="indent">The Noteables have been under the direction of Linda Taylor since 2008. 
               The chorus presents two concert series annually, each consisting of three 
               concerts, one in December, the other in May.  Membership fluctuates each 
               season ranging from 30-45 singers.  This is a non-audition group and new 
@@ -84,7 +76,7 @@
               Thursday nights from 5:30-7:30pm. 
             </p>
             <br>
-            <p>The Christmas programs include a wide variety of sacred and secular selections. 
+            <p class="indent">The Christmas programs include a wide variety of sacred and secular selections. 
               Unusual arrangements of familiar carols, Celtic and multi cultural songs, 
               whimsical novelty pieces, gospels, and songs about winter make for a very 
               versatile concert series.  Small ensembles add variety to the concert and 
@@ -94,12 +86,12 @@
               There is something for everyone!
             </p>
             <br>
-            <p>The Spring programs also include a wide variety of sacred and secular selections. 
+            <p class="indent">The Spring programs also include a wide variety of sacred and secular selections. 
               Easter, Celtic, Broadway and multicultural songs combine with pieces about spring 
               and renewal, spirituals, and just about anything the director wants to try on for size! 
             </p>
             <br>
-            <p>The director is animated and energetic and brings out the best in The Noteables 
+            <p class="indent">The director is animated and energetic and brings out the best in The Noteables 
               with her creative teaching abilities.  She makes having fun, while learning good 
               vocal technique a priority.  The group loves to move on stage and though the concerts 
               are informal and often engage the audience, the singing still remains at a 
@@ -107,7 +99,7 @@
             </p>
             <br>
             <h3>The Director</h3>
-            <p>Linda Taylor comes from a rich background of music. 
+            <p class="indent">Linda Taylor comes from a rich background of music. 
               Pianist, singer, guitarist, director of music theatre and multiple community choruses. 
               She has been giving voice lessons for over 30 years. Her energetic style of direction 
               combines vocal technique, through the use of visualization and breathing exercises with 
@@ -134,30 +126,7 @@
       </div><!--Page-->
     </main>
 
-    <footer>
-      <div class="footerCtn">
-        <div class = "footerIcons">
-            <a href="mailto:%20singinglady29@gmail.com" class="custom-tooltip" title="Email Me!">
-              <i class="footIcon fa-solid fa-envelope" style="color: grey;"></i>
-            </a>
-            <a href="http://www.facebook.com/SalidaSings" class="custom-tooltip" title="Facebook" target="_blank" rel="noopener noreferrer">
-              <i class="footIcon fa-brands fa-facebook" style="color: blue;"></i>
-            </a>
-            <a href="http://www.youtube.com/user/SalidaSings" class="custom-tooltip" title="Youtube" target="_blank" rel="noopener noreferrer">
-              <i class="footIcon fa-brands fa-youtube" style="color: red;"></i>
-            </a> 
-        </div>
-        <h4 class="centerContents largeText">
-            &copy; 2012-2024 SalidaSings.org  
-          <br>
-            Website By
-          <a class = "peakLink" href="https://peakservices.biz" target="_blank" rel="noopener noreferrer"> Peak Services</a>
-          <br>
-            For more information, please contact 
-          <a href="mailto:%20singinglady29@gmail.com" target="_blank" rel="noopener noreferrer">Linda Taylor</a>
-          - (719) 539-2428<br/>        
-        </h4>
-      </div>
-    </footer>
+    <div id="site-footer"></div>
+  <script src="./src/js/include-footer.js?v=20251028"></script>
   </body>
 </html>

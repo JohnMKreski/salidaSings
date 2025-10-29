@@ -6,7 +6,14 @@ var interval = 3000;
 var timer;
 var playButton = document.getElementById('play');
 var stopButton = document.getElementById('stop');
+var playButtonClass = document.getElementsByClassName('playBtn');
+var stopButtonClass = document.getElementsByClassName('stopBtn');
 
+// var arrowL = document.getElementById('arrowL');
+// var arrowR = document.getElementById('arrowR');
+
+// arrowL.disabled = true;
+// arrowR.disabled = true;
 playButton.disabled = true;
 
 
@@ -16,6 +23,8 @@ playButton.addEventListener('click', function() {
     timer = setInterval(nextSlide, interval);
     playButton.disabled = true; // Disable the play button to prevent multiple starts
     stopButton.disabled = false; // Enable the stop button
+
+    buttonChangeColor();
     console.log("Play Button Clicked")
   }
 });
@@ -27,9 +36,22 @@ stopButton.addEventListener('click', function() {
     timer = null;
     playButton.disabled = false; // Enable the play button
     stopButton.disabled = true; // Disable the stop button
-    console.log("Stop Button Clicked")
 
+    buttonChangeColor();
+    console.log("Stop Button Clicked")
   }
+
+  //TODO: Make a function to allow changing slides only when slideshow is stopped
+  // // Add click event listeners to arrows
+  // arrows.forEach(function(arrow, index) {
+  //   arrow.addEventListener('click', function() {
+  //     if (index === 0) {
+  //       prevSlide();
+  //     } else {
+  //       nextSlide();
+  //     }
+  //   });
+  // });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -70,6 +92,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add click event listeners to arrows
     arrows.forEach(function(arrow, index) {
       arrow.addEventListener('click', function() {
+        stopSlide();
+        buttonChangeColor();
+
         if (index === 0) {
           prevSlide();
         } else {
@@ -82,19 +107,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function changeSlide(index) {
   currentImgIndex = index;
-  // console.log("Current Image Index:", currentImgIndex, "of", imgs.length); // Log current index when slide changes
+  console.log("Current Image Index:", currentImgIndex, "of", imgs.length); // Log current index when slide changes
   updateSlide();
 }
 
 function prevSlide() {
   currentImgIndex = (currentImgIndex - 1 + imgs.length) % imgs.length;
-  // console.log("Current Image Index:", currentImgIndex, "of", imgs.length); // Log current index when going to previous slide
+  console.log("Current Image Index:", currentImgIndex, "of", imgs.length); // Log current index when going to previous slide
   updateSlide();
 }
 
 function nextSlide() {
   currentImgIndex = (currentImgIndex + 1) % imgs.length;
-  // console.log("Current Image Index:", currentImgIndex, "of", imgs.length); // Log current index when going to next slide
+  console.log("Current Image Index:", currentImgIndex + 1, "of", imgs.length); // Log current index when going to next slide
   updateSlide();
   // console.log(interval);
 }
@@ -105,4 +130,38 @@ function updateSlide() {
     img.style.opacity = (index === currentImgIndex) ? 1 : 0;
     // dots[index].classList.toggle('active', index === currentImgIndex);
   });
+}
+
+function stopSlide() {
+  // buttonChangeColor();
+
+  if (timer) {
+    clearInterval(timer);
+    timer = null;
+    playButton.disabled = false; // Enable the play button
+    stopButton.disabled = true; // Disable the stop button
+    console.log("Arrow Clicked, Stopped Slideshow")
+  }
+}
+
+
+//TODO
+function buttonChangeColor() {
+  if (timer == null) {
+    playButton.style.color = "green";
+
+    stopButton.disabled = true;
+
+    // stopButton.style.color = "black";
+    // stopButton.style.fontWeight = "normal";
+  } else {
+    playButton.disabled = true;
+    playButton.style = "";
+
+    // playButton.style.color = "black";
+    // playButton.style.fontWeight = "normal";
+
+    // stopButton.style.color = "red";
+    // stopButton.style.fontWeight = "bold";
+  }
 }

@@ -1,3 +1,62 @@
+/* Accessibility: Use :focus-visible for keyboard focus, no outline for mouse */
+a, button, [tabindex]:not([tabindex="-1"]) {
+  outline: none;
+  transition: outline 0.2s;
+}
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid #1877f3 !important;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1877f3;
+}
+
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Flex menu improvements */
+.flexMenuList {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.flexMenuList li {
+  margin: 0;
+  padding: 0;
+}
+.flexLink {
+  text-decoration: none;
+  color: #a90329;
+  font-weight: 600;
+  font-size: 1.2em;
+  transition: color 0.2s;
+}
+.flexLink:hover, .flexLink:focus {
+  color: #1877f3;
+  outline: 2px solid #1877f3;
+  outline-offset: 2px;
+}
+.flexLink[aria-current="page"] {
+  color: #1877f3;
+  border-bottom: 2px solid #1877f3;
+  cursor: default;
+}
+.flexTitle {
+  font-size: inherit;
+  font-weight: inherit;
+}
+@media (max-width: 700px) {
+  .flexMenuList {
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
 /*img
 {
   border: 0;
@@ -189,6 +248,10 @@ p
 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.indent
+{
   text-indent: 50px;
 }
 

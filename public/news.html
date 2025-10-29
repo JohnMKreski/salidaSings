@@ -11,7 +11,7 @@
     <link href="./src/css/slideshow.css" rel="stylesheet" type="text/css" />
     <link href="./src/css/img.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://kit.fontawesome.com/ba57204060.js" crossorigin="anonymous"></script>
+  <!-- Removed Font Awesome kit; footer icons are inline SVGs in shared footer -->
     <script src="./src/jquery/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script src="./src/jquery/jquery.cycle.all.js" type="text/javascript"></script>
 
@@ -26,16 +26,16 @@
       <div id="MainContent" class="menuCtn">
         <div id="header" class="headerCtn">
           <a href="index.html" class="flexHome">
-            <img src="./src/media/images/banner/Salida-Sings.png" />
+            <img src="./src/media/images/banner/Salida-Sings.png" alt="Salida Sings logo banner" />
           </a>
         </div>
 
-        <div class="FrontPageItemSelector flexMenu">
+        <div class="FrontPageItemSelector flexMenu" aria-label="Main Navigation">
           <a href="./index.html" class=" flexLink">
             <h2 class="flexTitle"> Gallery </h2>
           </a>
           
-          <a href="./news.html" class=" flexLink news">
+          <a href="./news.html" class=" flexLink news" aria-current="page">
             <h2 class="flexTitle"> News </h2>
           </a>
 
@@ -43,17 +43,19 @@
             <h2 class="flexTitle"> The Noteables </h2>
           </a>
 
-          
           <a href="support.html" class="flexLink support">
             <h2 class="flexTitle"> Support Us </h2>
           </a>
-         
-          
-          <!-- <a href="./contact.html" class="flexLink support">
-            <h2 class="flexTitle"> Contact Us </h2>
-          </a> -->
-
         </div>
+    <!--
+    <li>
+      <a href="./contact.html" class="flexLink support">
+        <span class="flexTitle">Contact Us</span>
+      </a>
+    </li>
+    -->
+  </ul>
+</nav>
       </div>
     </header>
 
@@ -64,191 +66,146 @@
           <hr style="background-color: #555;"/>
 
           <div class="paraContainer">
-            <h1><strong>Come Sing With Us!</strong></h1>
-            <!-- <img class="programImg floatRightWithBorder" src="./src/media/images/programs/spring2024.jpg"/> -->
-            <p><strong>The Noteables</strong> 
-              are recruiting female singers for their winter concert series, 
-              <strong>“Peace On Earth."</strong> on <strong>December 13-15.</strong>  
-              <strong>The Noteables</strong> are a chorus consisting of 25-30 women. 
-              We are a compassionate, friendly and supportive group of singers. 
-              We cheer each other on, help out when someone gets sick and have awesome rehearsals, 
-              learning vocal technique while having fun. Let’s face it. If it isn’t fun why do it? 
+            <!-- <h1><strong>We Can’t Stop Singing!</strong></h1> -->
+            <h1 style="color: red; text-align: center;"><strong>Don’t Miss Our Christmas Concerts!</strong></h1>
+            <p class="" style="text-align: center; font-size: xx-large;">
+              <strong style="color: red;">The Noteables</strong> 
+              are preparing for their Christmas concert series, 
+              <strong style="color: red;">“We Are The Lights”</strong>, December 12-14.
             </p>
             <br>
-            <p>
-              <strong>Thursday night rehearsals start September 5, 5:30-7:30 pm </strong> at 
-              <a 
-              href="https://www.google.com/maps/place/Salida+United+Methodist+Church/@38.532736,-105.9947549,17z/data=!4m14!1m7!3m6!1s0x871517e82538cfbb:0x64fd6d61da6a2a68!2sSalida+United+Methodist+Church!8m2!3d38.532736!4d-105.99218!16s%2Fg%2F1tld0ms8!3m5!1s0x871517e82538cfbb:0x64fd6d61da6a2a68!8m2!3d38.532736!4d-105.99218!16s%2Fg%2F1tld0ms8?entry=ttu"
-              class="custom-tooltip" title="Map" target="_blank" rel="noopener noreferrer"
-              >Salida United Methodist Church</a>
-              (diagonally across from the library) at the corner of D and 4th Streets, Salida. 
-              Due to Halloween and Thanksgiving falling on Thursdays, those weeks the rehearsals 
-              will be on <stong><em>Tuesdays</em></stong>, October 29 and November 26.
-            </p>
-            <br />
-            <div class="div-line"></div>
-            <br />
-            <p>
-              <strong>The Noteables</strong> will perform a wide variety of music that will encompass not only the 
-              Christmasy/winter related songs but also 5 songs about peace and unity, 
-              reflecting all the genuine sentiment hidden beneath the commercialism of the holiday. 
-              The concerts will include a wide selection of genres: gospel, unusual arrangements of traditional 
-              carols, winter ballads, calypso and Celtic.
-            </p>
-            <br>
-            <p>
-              <u>Songs include:</u> 
-              <em>The First Noel with Pachebel’s Canon, Sing Joy To the World, Chapua Kali Desemba,</em>
-              a rhythmic African carol with both English and easy to learn African lyrics, 
-              <em>A Gospel Song of Peace</em>, 
-              based loosely on the 
-              <em>Dona, Nobis, Pacem</em>
-              round, the lively 
-              <em>Let Heaven And Nature Sing</em>, 
-              which will get you dancing, 
-              <em>The Work of Christmas</em>, reminding us that the Christmas 
-              spirit continues throughout the year, <em>Christmas Pipes</em>, 
-              a Celtic song by Celtic Woman…. plus many more.
-            </p>
-            <br>
-            <p>
-              The chorus will be accompanied by Oso Blanco on drums, Kate Chiras on electric 
-              bass and Brenda Covert on flute. 
-              Featured will be Dave Tipton playing several instrumental carols on his Chapman Stick.
-            </p>
-            <!-- <p>
-              The mood changes with the hilarious <em>Painless Opera</em> involving all
-              kinds of theatrical antics. <em>Paul Simon’s Feelin’ Groovy, Livin’ Life in
-              4/4 Time</em> and a dramatic version of <em>Defying Gravity</em> from Broadway’s
-              <em>Wicked</em> bring even more excitement to this versatile program.
-            </p>
-            <br>
-            <p>
-              The show will feature guest instrumentalists: Oso Blanco, drums;
-              Yufen Chou, violin; Kathleen Chiras, electric bass; and Brenda
-              Covert, flute.
-            </p>
-            <br> -->
 
-            <br />
-            <div class="div-line"></div>
-            <br />
+            <div class="concertSection">
+              <div class="concertTop">
+                
+                <div class="concertLeft">
+                  <div class="concertDescription">
+                    <p class="indent">
+                      Under the animated direction of Linda Taylor, the chorus will perform a wide variety of seasonal music, 
+                      including unusual arrangements of  Christmas carols, winter ballads, humorous selections 
+                      and songs of peace, light, and love. 
+                    </p>
+                    <!-- <p class="indent">
+                      The concerts will include a wide selection of genres:  
+                      Ballads, Broadway, Contemplative, Blues, and Humorous.
+                    </p> -->
+                  </div>
+            
+                  <!-- <div class="concertPerformances">
+                    <h5><u>Performances:</u></h5>  
+                    <ul>
+                      <li>
+                        <strong>Friday, May 2, 7:00 pm</strong> at
+                        <a href="https://maps.app.goo.gl/KprqtpwiP8P9M5pQ9" 
+                          target="_blank" rel="noopener noreferrer">Clearview Community Church, Buena Vista, CO</a>
+                      </li>
+                      <li>
+                        <strong>Saturday, May 3, 7:00 pm</strong> at
+                        <a href="https://maps.app.goo.gl/Nkg8RzbzuK3WX7Wp6" 
+                          target="_blank" rel="noopener noreferrer">Salida SteamPlant Event Center</a>
+                      </li>
+                      <li>
+                        <strong>Saturday, May 4, 3:00 pm</strong> at
+                        <a href="https://maps.app.goo.gl/Nkg8RzbzuK3WX7Wp6" 
+                          target="_blank" rel="noopener noreferrer">Salida SteamPlant Event Center</a>
+                      </li>
+                    </ul>
+                  </div> -->
+                </div>
+            
+                <!-- <div class="concertImage">
+                  <img src="./src/media/images/programs/spring2025.jpg" alt="Spring 2025 Program">
+                </div> -->
+                
+              </div>
+            </div>
+            
+            
+              <!-- <div class="concertPoster">
+                <img class="poster" src="src/media/images/programs/winter2024.jpg" alt="Winter 2024 Program">
 
-            <h5><u>Concert Dates:</u></h5>  
-              <ul>
-                <li>
-                  <strong>Friday, December 13, 7:00pm</strong> at
-                    <a href="https://www.google.com/maps/place/Clear+View+Community+Church/@38.8317612,-106.1478749,17z/data=!4m14!1m7!3m6!1s0x87153542b9b5a70d:0x5752d281ae89de44!2sClear+View+Community+Church!8m2!3d38.831757!4d-106.1453!16s%2Fg%2F1tdpgnmj!3m5!1s0x87153542b9b5a70d:0x5752d281ae89de44!8m2!3d38.831757!4d-106.1453!16s%2Fg%2F1tdpgnmj?entry=ttu" 
-                      class="custom-tooltip" title="Map" target="_blank" rel="noopener noreferrer">
-                      Clearview Church in Buena Vista
-                    </a>  
-                </li>
-                <li>
-                  <strong>Saturday, December 14, 7:00pm</strong> at 
-                    <a href="https://www.google.com/maps/place/Salida+Steam+Plant+Theater/@38.5380576,-105.9943929,17z/data=!3m1!4b1!4m6!3m5!1s0x871517e70b953159:0x9e552e2f98bc75c5!8m2!3d38.5380534!4d-105.991818!16s%2Fg%2F1tsjf2qs?entry=ttu" 
-                      class="custom-tooltip" title="Map" target="_blank" rel="noopener noreferrer">
-                      Salida SteamPlant Event Center
-                    </a>
-                </li>
-                <li>
-                  <strong>Sunday, December 15, 3:00pm</strong> at
-                    <a href="https://www.google.com/maps/place/Salida+Steam+Plant+Theater/@38.5380576,-105.9943929,17z/data=!3m1!4b1!4m6!3m5!1s0x871517e70b953159:0x9e552e2f98bc75c5!8m2!3d38.5380534!4d-105.991818!16s%2Fg%2F1tsjf2qs?entry=ttu" 
-                      class="custom-tooltip" title="Map" target="_blank" rel="noopener noreferrer">
-                      Salida SteamPlant Event Center
-                    </a>
-                </li>
+                
+                
+              </div>-->
+
+            
+            <br>
+            <div class="div-line"></div>
+            <br>
+            
+              <!-- <h5 style="color: red;"><u>Songs Will Include:</u></h5> -->
+              <p>
+                <strong>Songs will include:</strong> We start out with
+                <em>The Little Drummer Boy,</em> partnered with <em>Peace On Earth, I Saw Three Ships,  Dormi, Dormi,</em>
+                a beautiful lullaby in Latin and
+                <em>Something Told the Wild Geese,</em> the poignant story of their winter flight and
+                <em>Carol of Winter Peace.</em> 
+              Lively selections include <em>Sing We Now Of Christmas, Rise and Shine! We Are the Lights,</em> 
+              the hilarious <em>One Of Those Summer Winters….</em>
+              plus, many more! 
+            </p>
+            <p>
+              <strong>Concert dates:</strong> <ul>
+                <li>Friday, December 12th, 7:00pm at Mountain Heights Church, Buena Vista</li>
+                <li>Saturday, December 13th, 7:00pm at Salida SteamPlant</li>
+                <li>Sunday, December 14th, 3:00pm at Salida SteamPlant</li>
               </ul>
-            <br>
+            </p>
+            <!-- <p>
+              <strong>Dress rehearsals:</strong> Tuesdays, December 2nd and 9th.
+            </p>
+            <p>
+              <strong>Dues:</strong> Sliding scale 
+              $30.00-$75.00 per season.
+            </p>
+            <p>
+                <strong>Absences:</strong>  4 allowed, (but not all back to back).
+            </p> -->
+            <!-- <p class="indent">
+              The show will feature Oso Blanco on drums, Kathleen Chiras on electric bass and flautist, 
+              Brenda Covert, who will play four duets, with piano accompaniment, including
+              <em>Amazing Grace, Danny Boy,</em> and two jigs. 
+            </p> -->
+            <br />
 
-            <ul>
-            <h5><u>Dress rehearsals</u> <em>are required:</em></h5>
-              <li>
-                <strong>Tuesday, December 3rd</strong> at
-                  <a href="https://www.google.com/maps/place/Salida+Steam+Plant+Theater/@38.5380576,-105.9943929,17z/data=!3m1!4b1!4m6!3m5!1s0x871517e70b953159:0x9e552e2f98bc75c5!8m2!3d38.5380534!4d-105.991818!16s%2Fg%2F1tsjf2qs?entry=ttu" 
-                    class="custom-tooltip" title="Map" target="_blank" rel="noopener noreferrer">
-                    Salida SteamPlant Event Center
-                  </a>
-              </li>
-              <li>
-                <strong>Tuesday, December 10th</strong> at
-                <a href="https://www.google.com/maps/place/Clear+View+Community+Church/@38.8317612,-106.1478749,17z/data=!4m14!1m7!3m6!1s0x87153542b9b5a70d:0x5752d281ae89de44!2sClear+View+Community+Church!8m2!3d38.831757!4d-106.1453!16s%2Fg%2F1tdpgnmj!3m5!1s0x87153542b9b5a70d:0x5752d281ae89de44!8m2!3d38.831757!4d-106.1453!16s%2Fg%2F1tdpgnmj?entry=ttu" 
-                class="custom-tooltip" title="Map" target="_blank" rel="noopener noreferrer">
-                Clearview Church in Buena Vista
-              </a> 
-              </li>
-            </ul>
-            <br />
-            <ul>
-            <strong>Dues:</strong>
-            Sliding scale $30.00-$75.00 per season with financial 
-              assistance from our treasury.
-            </ul>
-            <br />
-            <ul>
-            <strong>Absences:</strong> 3 allowed with a 4th for emergencies.
-            </ul>
-            <br />
-            <ul>
-              <strong>Recordings:</strong> We'll provide free practice CDs or flash drives for all the songs. 
-              For $5.00 extra you will be provided with a parts recording for all the 
-              songs with the director playing the piano and singing your part separate 
-              from the whole chorus. Music packets, a complete schedule and recordings 
-              will be ready for pick-up in mid-August
-            </ul>
-
-            <br />
             <div class="div-line"></div>
             <br />
-
-            <p>Remember that music is healing and has the ability to bring perfect strangers 
-              together in laughter, joy and harmony, something that will be front and center come this fall.  
-              Please join us. Spread the word! Don’t be shy. You’ll love it!! 
+            <p class="indent" style="font-size: x-large;">
+              <span style="color: red;"> The Noteables </span> 
+              are a chorus consisting of 25-30 women. We are a compassionate, friendly, and supportive 
+              group of singers whose goal is to bring high quality performances to Chaffee County.
+              Our music inspires, uplifts and moves audiences to laughter, tears and unexplored insights.  
+              Don’t miss out! Let us put you in the mood for Christmas!
+            
             </p>
-            <br>
-            <p>For more information and to sign up, call Linda Taylor, Artistic Director, 
-              at 719 539-2428. <em>Remember:</em> "Singing in a choir is cheaper than therapy, 
-              healthier than drinking and more fun than working out!!"  
-            </p>
-            <br>
-            <!-- <p>
-            Suggested 
-            <a href="./src/media/images/support/FundraisingLetter.pdf" class="custom-tooltip" title="Get the PDF to Donate!" target="_blank" rel="noopener noreferrer"> 
-                donation 
-              </a>
-               is $15 to help pay for the cost of music and
-              publicity. For more information, call Linda Taylor, 719 539-2428.
-            <a href="salidasings.org"> www.salidasings.org </a>
+            <!-- <p class="indent" style="font-size: x-large;">
+              Joining The Noteables will be the most rewarding and uplifting decision you’ve made in a long time! 
+              Remember, singing in a choir is cheaper than therapy, healthier than drinking, and more fun than 
+              working out
             </p> -->
-          </div><!--pctn-->
+            <br>
+            <div class="div-line"></div>
+            <br />
+            <!-- <p class="indent" style=" text-align: center;">
+              Suggested donation is $15 to help pay for the cost of music and publicity. 
+            </p> -->
+            <p class="indent" style=" text-align: center;">
+              For more information, contact Linda Taylor, Artistic Director at (719)539-2428 or 
+              <a href="mailto:%20singinglady29@gmail.com" class="custom-tooltip" title="Email Me!">
+                singinglady29@gmail.com  
+              </a>  
+            </p>
+            <!-- <p class="indent" style=" text-align: center;">
+              Tax deductible contributions are appreciated.
+            </p> -->
+
+            <br>
 
         </div><!--ContentMenu-->
       </div><!--Page-->
     </main>
 
-    <footer>
-      <div class="footerCtn">
-        <div class = "footerIcons">
-            <a href="mailto:%20singinglady29@gmail.com" class="custom-tooltip" title="Email Me!">
-              <i class="footIcon fa-solid fa-envelope" style="color: grey;"></i>
-            </a>
-            <a href="http://www.facebook.com/SalidaSings" class="custom-tooltip" title="Facebook" target="_blank" rel="noopener noreferrer">
-              <i class="footIcon fa-brands fa-facebook" style="color: blue;"></i>
-            </a>
-            <a href="http://www.youtube.com/user/SalidaSings" class="custom-tooltip" title="Youtube" target="_blank" rel="noopener noreferrer">
-              <i class="footIcon fa-brands fa-youtube" style="color: red;"></i>
-            </a> 
-        </div>
-        <h4 class="centerContents largeText">
-            &copy; 2012-2024 SalidaSings.org  
-          <br>
-            Website By
-          <a class = "peakLink" href="https://peakservices.biz" target="_blank" rel="noopener noreferrer"> Peak Services</a>
-          <br>
-            For more information, please contact 
-          <a href="mailto:%20singinglady29@gmail.com" target="_blank" rel="noopener noreferrer">Linda Taylor</a>
-          - (719) 539-2428<br/>        
-        </h4>
-      </div>
-    </footer>
+    <div id="site-footer"></div>
+  <script src="./src/js/include-footer.js?v=20251028"></script>
   </body>
 </html>
